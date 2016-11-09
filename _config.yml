@@ -1,0 +1,49 @@
+
+# general
+title: Data Linkage Repository
+email: ozgurakgun@gmail.com                 # for now
+description: Data Linkage Repository
+baseurl: ""
+url: "http://dlrep.github.io"
+# twitter_username: ?
+# github_username: dlrep
+
+# build settings
+layouts_dir: __internal/layouts
+markdown: kramdown
+kramdown:
+  input: GFM
+sass:
+  sass_dir: __internal/sass
+  style: :compressed
+
+# collections
+collections:
+- datasets
+- tasks
+- tags
+
+collections:
+  datasets:
+    output: true
+    permalink: /dataset/:path
+  tasks:
+    output: true
+    permalink: /task/:path
+  tags:
+    output: true
+    permalink: /tag/:path
+
+defaults:
+  - scope:
+      type: datasets
+    values:
+      layout: dataset
+  - scope:
+      type: tasks
+    values:
+      layout: task
+  - scope:
+      type: tags
+    values:
+      layout: tag
