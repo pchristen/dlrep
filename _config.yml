@@ -17,6 +17,10 @@ sass:
   sass_dir: __internal/sass
   style: :compressed
 
+exclude:
+- Gemfile
+- Gemfile.lock
+
 # collections
 collections:
 - custom
