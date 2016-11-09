@@ -66,13 +66,13 @@ ICPSR
 </td> </tr>
 
 <tr> <td nowrap markdown="1">
-[Amy B Ohara](Amy.B.Ohara@census.gov)
+[Amy B Ohara](mailto:Amy.B.Ohara@census.gov)
 </td> <td markdown="1">
 CENSUS/CARRA FED
 </td> </tr>
 
 <tr> <td nowrap markdown="1">
-[Evan Roberts](eroberts@umn.edu)
+[Evan Roberts](mailto:eroberts@umn.edu)
 </td> <td markdown="1">
 Minnesota Population Center and Department of Sociology, University of Minnesota
 </td> </tr>
