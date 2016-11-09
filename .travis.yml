@@ -1,9 +1,9 @@
 
 # travis phases and our setup
 # before_install
-# install
+# install                           -- install dependencies
 # before_script
-# script                            -- ./build.sh
+# script                            -- build the site, do htmlproofer
 # after_success
 # after_failure
 # OPTIONAL before_deploy
