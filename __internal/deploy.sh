@@ -13,7 +13,8 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     rm -rf repo-upstream
     git clone "https://github.com/dlrep/previews.git" repo-upstream
     cd repo-upstream
-    git checkout -B gh-pages
+    git checkout -B gh-pages                # create the branch if it doesn't exist
+    git checkout gh-pages                   # checkout the files
     rm -rf $TRAVIS_PULL_REQUEST
     cp -r ../_site $TRAVIS_PULL_REQUEST
     git config user.name "DLRep Build Bot"
@@ -29,7 +30,8 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
     rm -rf repo-upstream
     git clone "https://github.com/dlrep/production.git" repo-upstream
     cd repo-upstream
-    git checkout -B gh-pages
+    git checkout -B gh-pages                # create the branch if it doesn't exist
+    git checkout gh-pages                   # checkout the files
     rm -rf *
     cp -r ../_site/* .
     git config user.name "DLRep Build Bot"
