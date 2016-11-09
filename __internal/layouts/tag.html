@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<h1>This is the page for tag: {{ page.tag }}</h1>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Data Sets with this tag</h3>
+    </div>
+    <div class="panel-body">
+        <ul>
+        {% assign count = 0 %}
+        {% for item in site.datasets %}
+        {% if item.tags contains page.tag %}
+            {% assign count = count | plus: 1 %}
+            <li>
+            {{ item.date | date: "%-d %B %Y" }}: <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+        {% if count == 0 %}
+            <p>
+                There are no data sets with this tag.
+            </p>
+        {% endif %}
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Tasks with this tag</h3>
+    </div>
+    <div class="panel-body">
+        <ul>
+        {% assign count = 0 %}
+        {% for item in site.tasks %}
+        {% if item.tags contains page.tag %}
+            {% assign count = count | plus: 1 %}
+            <li>
+            {{ item.date | date: "%-d %B %Y" }}: <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+        {% if count == 0 %}
+            <p>
+                There are no tasks with this tag.
+            </p>
+        {% endif %}
+    </div>
+</div>

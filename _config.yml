@@ -19,11 +19,14 @@ sass:
 
 # collections
 collections:
+- custom
 - datasets
 - tasks
 - tags
 
 collections:
+  custom:
+    output: true
   datasets:
     output: true
     permalink: /dataset/:path
@@ -35,6 +38,10 @@ collections:
     permalink: /tag/:path
 
 defaults:
+  - scope:
+      type: custom
+    values:
+      layout: custom
   - scope:
       type: datasets
     values:

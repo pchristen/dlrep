@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<h2> Data Set: {{ page.title }} </h2>
+
+<p>
+    Proposed by:
+    {% for item in page.proposer %}
+        {{ item }}{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+</p>
+
+<p>
+    Added on: {{ page.date-added | date: '%-d %B %Y' }}.
+</p>
+
+<p>
+    Tags:
+    {% for item in page.tags %}
+        <a href="/tag/{{ item }}">{{ item }}</a>{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+</p>
+
+{{ page.content }}
