@@ -3,7 +3,7 @@
 # before_install
 # install                           -- install dependencies
 # before_script
-# script                            -- build the site, do htmlproofer
+# script                            -- build the site, do htmlproofer, deploy
 # after_success
 # after_failure
 # OPTIONAL before_deploy
@@ -24,8 +24,6 @@ install:
 script:
 - bundle exec jekyll build
 - bundle exec htmlproofer _site --assume-extension --check-html
-
-after_success:
 - bash __internal/deploy.sh
 
 env:
