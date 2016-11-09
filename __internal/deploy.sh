@@ -16,7 +16,7 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     rm -rf $TRAVIS_PULL_REQUEST
     cp -r ../_site $TRAVIS_PULL_REQUEST
     git config user.name "DLRep Build Bot"
-    # git config user.email ""
+    git config user.email "ozgurakgun@gmail.com"
     git add --all
     git commit -m "Preview build for PR dlrep/dlrep#$TRAVIS_PULL_REQUEST, commit dlrep/dlrep@$rev"
     git push "https://$GH_TOKEN@github.com/dlrep/previews.git" gh-pages
@@ -31,7 +31,7 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
     rm -rf *
     cp -r ../_site/* .
     git config user.name "DLRep Build Bot"
-    # git config user.email ""
+    git config user.email "ozgurakgun@gmail.com"
     git add --all
     git commit -m "Deploying commit dlrep/dlrep@$rev"
     git push "https://$GH_TOKEN@github.com/dlrep/production.git" gh-pages
