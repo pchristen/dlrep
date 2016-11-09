@@ -10,8 +10,9 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     echo "This is pull request number $TRAVIS_PULL_REQUEST."
     echo "The build will be deployed to to the 'previews' repository."
     rev=$(git rev-parse --short HEAD)
-    git clone "https://github.com/dlrep/previews.git" dlrep-previews
-    cd dlrep-previews
+    rm -rf repo-upstream
+    git clone "https://github.com/dlrep/previews.git" repo-upstream
+    cd repo-upstream
     git checkout -B gh-pages
     rm -rf $TRAVIS_PULL_REQUEST
     cp -r ../_site $TRAVIS_PULL_REQUEST
@@ -26,8 +27,9 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
     echo "This is the master branch."
     echo "The build will be deployed to to the 'production' repository."
     rev=$(git rev-parse --short HEAD)
-    git clone "https://github.com/dlrep/production.git" dlrep-production
-    cd dlrep-production
+    rm -rf repo-upstream
+    git clone "https://github.com/dlrep/production.git" repo-upstream
+    cd repo-upstream
     git checkout -B gh-pages
     rm -rf *
     cp -r ../_site/* .
