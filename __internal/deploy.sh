@@ -6,6 +6,9 @@
 set -o errexit
 set -o nounset
 
+git config user.name "Özgür Akgün"
+git config user.email "ozgurakgun@gmail.com"
+
 if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     echo "This is pull request number $TRAVIS_PULL_REQUEST."
     echo "The build will be deployed to to the 'previews' repository."
@@ -17,8 +20,6 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     git checkout gh-pages                   # checkout the files
     rm -rf $TRAVIS_PULL_REQUEST
     cp -r ../_site $TRAVIS_PULL_REQUEST
-    git config user.name "DLRep Build Bot"
-    git config user.email "ozgurakgun@gmail.com"
     git add --all
     git commit -m "Preview build for PR dlrep/dlrep#$TRAVIS_PULL_REQUEST, commit dlrep/dlrep@$rev"
     git push "https://$GH_TOKEN@github.com/dlrep/previews.git" gh-pages > stdout 2> stderr
@@ -35,8 +36,6 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
     git checkout gh-pages                   # checkout the files
     rm -rf *
     cp -r ../_site/* .
-    git config user.name "DLRep Build Bot"
-    git config user.email "ozgurakgun@gmail.com"
     git add --all
     git commit -m "Deploying commit dlrep/dlrep@$rev"
     git push "https://$GH_TOKEN@github.com/dlrep/production.git" gh-pages > stdout 2> stderr
