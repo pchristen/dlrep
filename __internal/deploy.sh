@@ -20,8 +20,7 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     git config user.email "ozgurakgun@gmail.com"
     git add --all
     git commit -m "Preview build for PR dlrep/dlrep#$TRAVIS_PULL_REQUEST, commit dlrep/dlrep@$rev"
-    git remote add upstream "https://$GH_TOKEN@github.com/dlrep/production.git"
-    git push upstream gh-pages
+    git push -q "https://$GH_TOKEN@github.com/dlrep/previews.git" gh-pages
 
 elif [ $TRAVIS_BRANCH == "master" ]; then
     echo "This is the master branch."
@@ -37,8 +36,7 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
     git config user.email "ozgurakgun@gmail.com"
     git add --all
     git commit -m "Deploying commit dlrep/dlrep@$rev"
-    git remote add upstream "https://$GH_TOKEN@github.com/dlrep/production.git"
-    git push upstream gh-pages
+    git push -q "https://$GH_TOKEN@github.com/dlrep/production.git" gh-pages
 
 else
     echo "Skipping deploy."
