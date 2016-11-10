@@ -17,7 +17,8 @@ kramdown:
 exclude:
 - Gemfile
 - Gemfile.lock
-- vendor
+- vendor                                        # travis creates this directory during "install"
+- README.md
 
 # collections
 collections:
