@@ -12,7 +12,7 @@ git config --global user.name "dlrep-bot"
 git config --global user.email "ozgurakgun+dlrep@gmail.com"
 
 REV=$(git rev-parse --short HEAD)
-TIME=$(date "+%Y/%m/%d %H:%M:%S")
+TIME=$(date "+%Y-%m-%d %H:%M:%S")
 
 if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     echo "This is pull request number $TRAVIS_PULL_REQUEST."
