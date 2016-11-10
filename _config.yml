@@ -1,12 +1,12 @@
 
 # general
 title: Data Linkage Repository
-email: ozgurakgun@gmail.com                 # for now
+email: ozgurakgun+dlrep@gmail.com
 description: Data Linkage Repository
 baseurl: ""
-url: "http://dlrep.github.io"
+url: "http://dlrep.github.io"                   # we need a custom domain!
 # twitter_username: ?
-# github_username: dlrep
+github_username: dlrep
 
 # build settings
 layouts_dir: __internal/layouts
