@@ -17,6 +17,9 @@ sass:
   sass_dir: __internal/sass
   style: :compressed
 
+cache:
+- bundler
+
 exclude:
 - Gemfile
 - Gemfile.lock
