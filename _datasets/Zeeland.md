@@ -5,6 +5,7 @@ proposer: Gerrit Bloothooft
 tags:
 - blue
 - red
+- green
 ---
 
 The Zeeland data set was made available by Gerrit Bloothooft during the
