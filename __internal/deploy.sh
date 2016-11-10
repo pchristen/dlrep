@@ -37,6 +37,9 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
         git commit -m "Preview build for PR dlrep/dlrep#$TRAVIS_PULL_REQUEST, commit dlrep/dlrep@$REV (at $TIME)"
         git push "https://$GH_TOKEN@github.com/dlrep/previews.git" gh-pages > stdout 2> stderr
         cat stdout stderr | grep -v 'github.com/dlrep'
+
+        export GITHUB_COMMENT="Successfully created preview build: http://dlrep.github.io/previews/PR-$TRAVIS_PULL_REQUEST"
+        bundle exec ruby __internal/github_comment.rb
     else
         echo "There were no changes."
         echo "Skipping deploy."
