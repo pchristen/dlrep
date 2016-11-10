@@ -32,9 +32,15 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
 
     # ship it
     git add --all
-    git commit -m "Preview build for PR dlrep/dlrep#$TRAVIS_PULL_REQUEST, commit dlrep/dlrep@$REV (at $TIME)"
-    git push "https://$GH_TOKEN@github.com/dlrep/previews.git" gh-pages > stdout 2> stderr
-    cat stdout stderr | grep -v 'github.com/dlrep'
+    if [[ -n $(git status -s) ]]; then
+        echo "Deploying..."
+        git commit -m "Preview build for PR dlrep/dlrep#$TRAVIS_PULL_REQUEST, commit dlrep/dlrep@$REV (at $TIME)"
+        git push "https://$GH_TOKEN@github.com/dlrep/previews.git" gh-pages > stdout 2> stderr
+        cat stdout stderr | grep -v 'github.com/dlrep'
+    else
+        echo "There were no changes."
+        echo "Skipping deploy."
+    fi
 
 
 elif [ $TRAVIS_BRANCH == "master" ]; then
@@ -51,16 +57,21 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
     git checkout -B gh-pages                # create the branch if it doesn't exist
     git checkout gh-pages                   # checkout the files
 
-
     # copy current files
     rm -rf *
     cp -r ../_site/* .
 
     # ship it
     git add --all
-    git commit -m "Deploying commit dlrep/dlrep@$REV (at $TIME)"
-    git push "https://$GH_TOKEN@github.com/dlrep/production.git" gh-pages > stdout 2> stderr
-    cat stdout stderr | grep -v 'github.com/dlrep'
+    if [[ -n $(git status -s) ]]; then
+        echo "Deploying..."
+        git commit -m "Deploying commit dlrep/dlrep@$REV (at $TIME)"
+        git push "https://$GH_TOKEN@github.com/dlrep/production.git" gh-pages > stdout 2> stderr
+        cat stdout stderr | grep -v 'github.com/dlrep'
+    else
+        echo "There were no changes."
+        echo "Skipping deploy."
+    fi
 
 
 else
