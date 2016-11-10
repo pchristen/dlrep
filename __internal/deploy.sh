@@ -23,8 +23,7 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     rm -rf repo-upstream
     git clone "https://github.com/dlrep/previews.git" repo-upstream
     cd repo-upstream
-    git checkout -B gh-pages                # create the branch if it doesn't exist
-    # git checkout gh-pages                   # checkout the files
+    git checkout gh-pages                   # checkout the files
 
     # copy current files
     rm -rf PR-$TRAVIS_PULL_REQUEST
@@ -57,7 +56,6 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
     rm -rf repo-upstream
     git clone "https://github.com/dlrep/production.git" repo-upstream
     cd repo-upstream
-    git checkout -B gh-pages                # create the branch if it doesn't exist
     git checkout gh-pages                   # checkout the files
 
     # copy current files
