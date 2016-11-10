@@ -6,6 +6,8 @@
 set -o errexit
 set -o nounset
 
+SCRIPT_DIR="$( cd "$( dirname "$0" )" && pwd )"
+
 git config --global user.name "dlrep-bot"
 git config --global user.email "ozgurakgun+dlrep@gmail.com"
 
@@ -38,7 +40,7 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
         cat stdout stderr | sed "s/$GH_TOKEN/TOKEN/g"
 
         export GITHUB_COMMENT="Successfully created preview build: http://dlrep.github.io/previews/PR-$TRAVIS_PULL_REQUEST"
-        bundle exec ruby github_comment.rb
+        bundle exec ruby "${SCRIPT_DIR}"/github_comment.rb
     else
         echo "There were no changes."
         echo "Skipping deploy."
