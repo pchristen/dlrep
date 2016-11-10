@@ -17,7 +17,7 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     echo "The build will be deployed to to the 'previews' repository."
 
     # rebuild with custom baseurl
-    bundle exec jekyll build --baseurl "/previews/$TRAVIS_PULL_REQUEST"
+    bundle exec jekyll build --baseurl "/previews/PR-$TRAVIS_PULL_REQUEST"
 
     # clone repo
     rm -rf repo-upstream
@@ -27,8 +27,8 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     git checkout gh-pages                   # checkout the files
 
     # copy current files
-    rm -rf $TRAVIS_PULL_REQUEST
-    cp -r ../_site $TRAVIS_PULL_REQUEST
+    rm -rf PR-$TRAVIS_PULL_REQUEST
+    cp -r ../_site PR-$TRAVIS_PULL_REQUEST
 
     # ship it
     git add --all
