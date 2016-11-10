@@ -11,8 +11,8 @@ permalink: /
 These are the web pages for the **Data Linkage Repository**.
 
 The repository contains
-a list of [data sets](/datasets) used in the literature,
-and a list of data linkage [tasks](/tasks).
+a list of [data sets]({{ "datasets" | prepend: site.baseurl }}) used in the literature,
+and a list of data linkage [tasks]({{ "tasks" | prepend: site.baseurl }}).
 
 Each data set and task contains references to relevant publications,
 and provides a way of citing them in future publications.
