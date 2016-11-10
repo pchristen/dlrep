@@ -6,8 +6,8 @@
 set -o errexit
 set -o nounset
 
-git config --global user.name "Özgür Akgün"
-git config --global user.email "ozgurakgun@gmail.com"
+git config --global user.name "dlrep-bot"
+git config --global user.email "ozgurakgun+dlrep@gmail.com"
 
 REV=$(git rev-parse --short HEAD)
 TIME=$(date "+%Y/%m/%d %H:%M:%S")
