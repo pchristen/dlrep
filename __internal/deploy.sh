@@ -17,7 +17,7 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     echo "The build will be deployed to to the 'previews' repository."
 
     # rebuild with custom baseurl
-    bundle exec jekyll build --baseurl "previews/$TRAVIS_PULL_REQUEST"
+    bundle exec jekyll build --baseurl "/previews/$TRAVIS_PULL_REQUEST"
 
     # clone repo
     rm -rf repo-upstream
@@ -42,7 +42,7 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
     echo "The build will be deployed to to the 'production' repository."
 
     # rebuild with custom baseurl
-    bundle exec jekyll build --baseurl "production"
+    bundle exec jekyll build --baseurl "/production"
 
     # clone repo
     rm -rf repo-upstream
