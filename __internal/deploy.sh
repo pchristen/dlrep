@@ -34,12 +34,12 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     git add --all
     if [[ -n $(git status -s) ]]; then
         echo "Deploying..."
-        git commit -m "Preview build for PR dlrep/dlrep#$TRAVIS_PULL_REQUEST, commit dlrep/dlrep@$REV (at $TIME)"
+        git commit -m "PR dlrep/dlrep#$TRAVIS_PULL_REQUEST, commit dlrep/dlrep@$REV (at $TIME)"
         git push "https://$GH_TOKEN@github.com/dlrep/previews.git" gh-pages > stdout 2> stderr
         cat stdout stderr | sed "s/$GH_TOKEN/TOKEN/g"
 
         export GITHUB_COMMENT="Successfully created preview build: http://dlrep.github.io/previews/PR-$TRAVIS_PULL_REQUEST"
-        bundle exec ruby __internal/github_comment.rb
+        bundle exec ruby github_comment.rb
     else
         echo "There were no changes."
         echo "Skipping deploy."
