@@ -6,8 +6,8 @@
 set -o errexit
 set -o nounset
 
-git config user.name "Özgür Akgün"
-git config user.email "ozgurakgun@gmail.com"
+git config --global user.name "Özgür Akgün"
+git config --global user.email "ozgurakgun@gmail.com"
 
 if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     echo "This is pull request number $TRAVIS_PULL_REQUEST."
