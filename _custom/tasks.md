@@ -18,7 +18,6 @@ This page contains a list of tasks related to Data Linkage.
 {% assign items_sorted = site.tasks | sort: 'date' %}
 {% for item in items_sorted %}
     <tr>
-        <!-- <td> {{ item.date | date: '%-d %B %Y' }} </td> -->
         <td> <a href="{{ item.url | prepend: site.baseurl }}"> {{ item.title }} </a> </td>
     </tr>
 {% endfor %}

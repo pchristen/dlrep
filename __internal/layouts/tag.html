@@ -39,7 +39,7 @@ layout: default
         {% if item.tags contains page.tag %}
             {% assign count = count | plus: 1 %}
             <li>
-            {{ item.date | date: "%-d %B %Y" }}: <a href="{{ item.url }}">{{ item.title }}</a>
+                <a href="{{ item.url }}">{{ item.title }}</a>
             </li>
         {% endif %}
         {% endfor %}
