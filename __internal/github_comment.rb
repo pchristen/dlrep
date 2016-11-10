@@ -1,5 +1,6 @@
+require 'octokit'
 
-token   = ENV["CSPLIB_ROBOT_TOKEN"]
+token   = ENV["GH_TOKEN"]
 prnum   = ENV["TRAVIS_PULL_REQUEST"]
 comment = ENV["GITHUB_COMMENT"]
 

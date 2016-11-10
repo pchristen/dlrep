@@ -6,6 +6,8 @@
 set -o errexit
 set -o nounset
 
+SCRIPT_DIR="$( cd "$( dirname "$0" )" && pwd )"
+
 git config --global user.name "dlrep-bot"
 git config --global user.email "ozgurakgun+dlrep@gmail.com"
 
@@ -23,7 +25,6 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     rm -rf repo-upstream
     git clone "https://github.com/dlrep/previews.git" repo-upstream
     cd repo-upstream
-    git checkout -B gh-pages                # create the branch if it doesn't exist
     git checkout gh-pages                   # checkout the files
 
     # copy current files
@@ -34,12 +35,11 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     git add --all
     if [[ -n $(git status -s) ]]; then
         echo "Deploying..."
-        git commit -m "Preview build for PR dlrep/dlrep#$TRAVIS_PULL_REQUEST, commit dlrep/dlrep@$REV (at $TIME)"
+        git commit -m "PR dlrep/dlrep#$TRAVIS_PULL_REQUEST, commit dlrep/dlrep@$REV (at $TIME)"
         git push "https://$GH_TOKEN@github.com/dlrep/previews.git" gh-pages > stdout 2> stderr
         cat stdout stderr | sed "s/$GH_TOKEN/TOKEN/g"
-
         export GITHUB_COMMENT="Successfully created preview build: http://dlrep.github.io/previews/PR-$TRAVIS_PULL_REQUEST"
-        bundle exec ruby __internal/github_comment.rb
+        bundle exec ruby "${SCRIPT_DIR}"/github_comment.rb
     else
         echo "There were no changes."
         echo "Skipping deploy."
@@ -57,7 +57,6 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
     rm -rf repo-upstream
     git clone "https://github.com/dlrep/production.git" repo-upstream
     cd repo-upstream
-    git checkout -B gh-pages                # create the branch if it doesn't exist
     git checkout gh-pages                   # checkout the files
 
     # copy current files
