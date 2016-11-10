@@ -13,9 +13,6 @@ layouts_dir: __internal/layouts
 markdown: kramdown
 kramdown:
   input: GFM
-sass:
-  sass_dir: __internal/sass
-  style: :compressed
 
 exclude:
 - Gemfile
