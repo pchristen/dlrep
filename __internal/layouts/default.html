@@ -21,8 +21,8 @@
         {% endif %}
     </title>
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
-    <!-- <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/{{ page.url | replace:'index.html','' }}"> -->
+    <link rel="stylesheet" href="{{ "/assets/main.css" | prepend: site.baseurl }}">
+    <!-- <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"> -->
 
     <!-- import jQuery -->
     <script
@@ -64,9 +64,9 @@
                         {% assign usetitle = p.title %}
                     {% endif %}
                     {% if page.title == p.title %}
-                        <li class="active"><a href="{{ site.baseurl }}/{{ p.url }}">{{ usetitle }}</a></li>
+                        <li class="active"><a href="{{ p.url | prepend: site.baseurl }}">{{ usetitle }}</a></li>
                     {% else %}
-                        <li><a href="{{ site.baseurl }}/{{ p.url }}">{{ usetitle }}</a></li>
+                        <li><a href="{{ p.url | prepend: site.baseurl }}">{{ usetitle }}</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
