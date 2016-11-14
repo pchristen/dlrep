@@ -77,6 +77,12 @@ CENSUS/CARRA FED
 Minnesota Population Center and Department of Sociology, University of Minnesota
 </td> </tr>
 
+
+<tr> <td nowrap markdown="1">
+[Peter Christen](http://users.cecs.anu.edu.au/~christen/)
+</td> <td markdown="1">
+Research School of Computer Science, The Australian National University
+</td> </tr>
         </table>
     </div>
 </div>
