@@ -10,6 +10,7 @@ SCRIPT_DIR="$( cd "$( dirname "$0" )" && pwd )"
 
 git config --global user.name "dlrep-bot"
 git config --global user.email "ozgurakgun+dlrep@gmail.com"
+git config --global push.default simple
 
 REV=$(git rev-parse --short HEAD)
 TIME=$(date "+%Y-%m-%d %H:%M:%S")
