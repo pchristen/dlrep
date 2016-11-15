@@ -64,7 +64,7 @@ ICPSR, University of Michigan
 </td> </tr>
 
 <tr> <td nowrap markdown="1">
-[Amy B Ohara](http://www.census.gov/research/researchers/profile.php?cv_profile=2307)
+[Amy B O'Hara](http://www.census.gov/research/researchers/profile.php?cv_profile=2307)
 </td> <td markdown="1">
 CENSUS/CARRA FED
 </td> </tr>
