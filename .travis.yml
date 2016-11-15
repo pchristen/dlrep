@@ -23,7 +23,7 @@ rvm:
   
 script:
 - bundle exec jekyll build
-- bundle exec htmlproofer _site --assume-extension --check-html
+- bundle exec htmlproofer _site --assume-extension --check-html --disable-external
 - bash __internal/deploy.sh
 
 env:

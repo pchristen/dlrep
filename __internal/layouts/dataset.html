@@ -4,6 +4,8 @@ layout: default
 
 <h2> Data Set: {{ page.title }} </h2>
 
+<hr>
+
 <p>
     Proposed by:
     {% for item in page.proposer %}
@@ -12,7 +14,7 @@ layout: default
 </p>
 
 <p>
-    Added on: {{ page.date-added | date: '%-d %B %Y' }}.
+    Added on: {{ page.date | date: '%-d %B %Y' }}.
 </p>
 
 <p>
@@ -21,5 +23,7 @@ layout: default
         <a href="{{ site.baseurl }}/tag/{{ item }}">{{ item }}</a>{% if forloop.last == false %},{% endif %}
     {% endfor %}
 </p>
+
+<hr>
 
 {{ page.content }}
