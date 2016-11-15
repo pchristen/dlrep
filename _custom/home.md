@@ -22,8 +22,6 @@ We welcome contributions via [GitHub](http://www.github.com/dlrep/dlrep).
 
 </div>
 
-
-
 <div class="panel panel-default" style="width: 80%; margin: 0 auto;">
     <div class="panel-heading">
         <h2 class="panel-title">
@@ -36,13 +34,13 @@ We welcome contributions via [GitHub](http://www.github.com/dlrep/dlrep).
             <tr> <th> Name </th> <th> Affiliation </th> </tr>
 
 <tr> <td nowrap markdown="1">
-[Hye-Chung Kum](mailto:kum@tamu.edu)
+[Hye-Chung Kum](https://sph.tamhsc.edu/hpm/faculty/kum.html)
 </td> <td markdown="1">
 Texas A&M University, Dept. of Health Policy and Management, Dept. of Computer Science and Engineering, Dept. of Industrial and Systems Engineering
 </td> </tr>
 
 <tr> <td nowrap markdown="1">
-[Luiza Antonie](mailto:lantonie@uoguelph.ca)
+[Luiza Antonie](http://www.uoguelph.ca/~lantonie/)
 </td> <td markdown="1">
 School of Computer Science, University of Guelph, Canada
 </td> </tr>
@@ -54,25 +52,25 @@ School of Computer Science, University of St Andrews
 </td> </tr>
 
 <tr> <td nowrap markdown="1">
-[J Trent Alexander](mailto:J.Trent.Alexander@census.gov)
+[J Trent Alexander](https://www.census.gov/ces/researchprograms/workingatcarra.html)
 </td> <td markdown="1">
 CENSUS/CARRA FED
 </td> </tr>
 
 <tr> <td nowrap markdown="1">
-[Margaret Levenstein](mailto:maggiel@umich.edu)
+[Margaret Levenstein](http://www-personal.umich.edu/~maggiel/)
 </td> <td markdown="1">
-ICPSR
+ICPSR, University of Michigan
 </td> </tr>
 
 <tr> <td nowrap markdown="1">
-[Amy B Ohara](mailto:Amy.B.Ohara@census.gov)
+[Amy B Ohara](http://www.census.gov/research/researchers/profile.php?cv_profile=2307)
 </td> <td markdown="1">
 CENSUS/CARRA FED
 </td> </tr>
 
 <tr> <td nowrap markdown="1">
-[Evan Roberts](mailto:eroberts@umn.edu)
+[Evan Roberts](http://www.evanroberts.net/)
 </td> <td markdown="1">
 Minnesota Population Center and Department of Sociology, University of Minnesota
 </td> </tr>
