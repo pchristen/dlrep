@@ -62,6 +62,7 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
 
     # copy current files
     rm -rf *
+    echo "dlrep.org" > CNAME
     cp -r ../_site/* .
 
     # ship it
