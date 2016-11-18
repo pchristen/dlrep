@@ -49,3 +49,11 @@ Minnesota Population Center and Department of Sociology, University of Minnesota
 - [Peter Christen](http://users.cecs.anu.edu.au/~christen/)  
 Research School of Computer Science, The Australian National University
 
+
+## Acknowledgements
+
+We thank the following institutions for their support for the Data Linkage Repository.
+
+- [ADRC-Scotland](https://adrn.ac.uk/about/research-centre-scotland)
+- [Isaac Newton Institute for Mathematical Sciences](http://www.newton.ac.uk/event/dlaw02)
+
