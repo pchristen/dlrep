@@ -51,6 +51,9 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
     echo "This is the master branch."
     echo "The build will be deployed to to the 'production' repository."
 
+    # rebuild with custom baseurl
+    bundle exec jekyll build --baseurl "http://dlrep.org"
+
     # clone repo
     rm -rf repo-upstream
     git clone "https://github.com/dlrep/production.git" repo-upstream
