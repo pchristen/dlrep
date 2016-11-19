@@ -27,25 +27,18 @@ We welcome contributions via [GitHub](http://www.github.com/dlrep/dlrep).
 
 - [Özgür Akgün](http://ozgur.host.cs.st-andrews.ac.uk)  
 School of Computer Science, University of St Andrews
-
 - [J Trent Alexander](https://www.census.gov/ces/researchprograms/workingatcarra.html)  
 CENSUS/CARRA FED
-
 - [Luiza Antonie](http://www.uoguelph.ca/~lantonie/)  
 School of Computer Science, University of Guelph, Canada
-
 - [Peter Christen](http://users.cecs.anu.edu.au/~christen/)  
 Research School of Computer Science, The Australian National University
-
 - [Hye-Chung Kum](https://sph.tamhsc.edu/hpm/faculty/kum.html)  
 Texas A&M University, Dept. of Health Policy and Management, Dept. of Computer Science and Engineering, Dept. of Industrial and Systems Engineering
-
 - [Margaret Levenstein](http://www-personal.umich.edu/~maggiel/)  
 ICPSR, University of Michigan
-
 - [Amy B O'Hara](http://www.census.gov/research/researchers/profile.php?cv_profile=2307)  
 CENSUS/CARRA FED
-
 - [Evan Roberts](http://www.evanroberts.net/)  
 Minnesota Population Center and Department of Sociology, University of Minnesota
 
