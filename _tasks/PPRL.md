@@ -1,5 +1,5 @@
 ---
-title: Privacy-preserving record linkage
+title: Privacy-Preserving Record Linkage
 ---
 
 Privacy-preserving record linkage (PPRL) is the process of identifying and matching records that represent the
