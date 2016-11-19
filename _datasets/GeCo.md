@@ -3,7 +3,8 @@ date: 2016-11-18
 title: GeCo - data Generator Corruptor
 proposer: Peter Christen
 tags:
-- artificial data
+- artificial
+- personal
 ---
 
 The GeCo data generator and corruptor is an open source Python package that allows flexible
