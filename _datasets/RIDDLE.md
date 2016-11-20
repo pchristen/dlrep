@@ -4,6 +4,7 @@ title: RIDDLE - Repository of Information on Duplicate Detection, Record Linkage
 proposer:  Misha Bilenko
 tags:
 - external
+- generator
 ---
 
 The [Repository of Information on Duplicate Detection, Record Linkage, and Identity
