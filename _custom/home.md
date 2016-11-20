@@ -47,9 +47,7 @@ Minnesota Population Center and Department of Sociology, University of Minnesota
 
 We thank the following institutions for their support for the Data Linkage Repository.
 
-- The [Administrative Data Research Centre Scotland](https://adrn.ac.uk/about/research-centre-scotland)
-  [ADRC-Scotland] for funding the  domain registration for [dlrep.org](http://dlrep.org/).
-  
-- The [Isaac Newton Institute for Mathematical Sciences](http://www.newton.ac.uk/), Cambridge,
-  for support and hospitality during the programme [Data Linkage and Anonymisation](https://www.newton.ac.uk/event/dla)
-  (INI DLA) where initial work on this repository was undertaken. The INI DLA programme is supported by EPSRC grant no EP/K032208/1.
+- The [Administrative Data Research Centre Scotland (ADRC-Scotland)](https://adrn.ac.uk/about/research-centre-scotland), for funding the  domain registration for [dlrep.org](http://dlrep.org/).
+- The [Isaac Newton Institute for Mathematical Sciences, Cambridge](http://www.newton.ac.uk/),
+  for support and hospitality during the programme [Data Linkage and Anonymisation (INI DLA)](https://www.newton.ac.uk/event/dla) where initial work on this repository was undertaken.  
+  The INI DLA programme is supported by EPSRC grant no EP/K032208/1.
