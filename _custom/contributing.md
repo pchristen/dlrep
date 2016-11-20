@@ -20,6 +20,15 @@ Maybe we can do that by describing how to do certain things:
 - push,
 - make pull request.
 
+## Some good pages with very useful information:
+
+-- [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/)
+
+-- [GitHub Flow in the Browser](https://help.github.com/articles/github-flow-in-the-browser/)
+
+-- [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+
 Then somebody will merge your changes.
 
 You (or a maintainer) may need to make some more commits & pushes before the merge.
