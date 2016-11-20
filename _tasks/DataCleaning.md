@@ -1,7 +1,5 @@
 ---
 title: Data Cleaning
-tags:
-- red
 ---
 
 Most data needs to be cleaned in some way.
