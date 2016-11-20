@@ -7,6 +7,7 @@ tags:
 - personal
 - external
 - public
+- generator
 ---
 
 The GeCo data generator and corruptor is an open source Python package that allows flexible
