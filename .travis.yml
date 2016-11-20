@@ -22,7 +22,7 @@ rvm:
 - 2.3.1
   
 script: |
-  bundle exec jekyll build &&
+  JEKYLL_ENV=development bundle exec jekyll build &&
   bundle exec htmlproofer _site --assume-extension --check-html --disable-external &&
   bash __internal/deploy.sh
 
