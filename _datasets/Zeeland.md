@@ -3,8 +3,10 @@ date: 2016-11-08
 title: Zeeland
 proposer: Gerrit Bloothooft
 tags:
-- blue
-- red
+- historical
+- personal
+- external
+- confidential
 ---
 
 The Zeeland data set was made available by Gerrit Bloothooft during the
