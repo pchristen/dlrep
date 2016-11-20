@@ -51,6 +51,5 @@ We thank the following institutions for their support for the Data Linkage Repos
   [ADRC-Scotland] for funding the  domain registration for [dlrep.org](http://dlrep.org/).
   
 - The [Isaac Newton Institute for Mathematical Sciences](http://www.newton.ac.uk/), Cambridge,
-  for support and hospitality during the programme [Data Linkage and Anonymisation]
-  [https://www.newton.ac.uk/event/dla] (INI DLA) where initial work on this repository was undertaken.
-  The INI DLA programme is supported by EPSRC grant no EP/K032208/1.
+  for support and hospitality during the programme [Data Linkage and Anonymisation](https://www.newton.ac.uk/event/dla)
+  (INI DLA) where initial work on this repository was undertaken. The INI DLA programme is supported by EPSRC grant no EP/K032208/1.
