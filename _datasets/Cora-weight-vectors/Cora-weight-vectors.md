@@ -14,7 +14,7 @@ tags:
 This data set is a file containing vectors with weights (similarities) as calculated between attributes of the [Cora]() data
 set (what URL to link the the dlrep Cora page?)
 
-# Files
+## Files
 
 [cora-weight-vectors.csv.gz](cora-weight-vectors.csv.gz)
 
