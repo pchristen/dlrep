@@ -16,7 +16,7 @@ set (what URL to link the the dlrep Cora page?)
 
 # File
 
-to add cora-weight-vectors.csv.gz
+[cora-weight-vectors.csv.gz](cora-weight-vectors.csv.gz)
 
 The header line of this file contains the following attributes/fields:
 
@@ -37,9 +37,7 @@ with elements:
 This weight vector file was generated using the [Febrl](https://sourceforge.net/projects/febrl/) (Freely Extensible
 Biomedical Record Linkage) system. The Python script used is:
 
-to add: febrl-cora-project.py 
-
-
+[febrl-cora-project.py](febrl-cora-project.py)
 
 ## Citation
 
