@@ -15,7 +15,14 @@ tags:
 The GeCo data generator and corruptor is an open source Python package that allows flexible
 generation or realistic personal information.
 
-An [online demo, Python program, and documentation](http://dmm.anu.edu.au/geco/) are available.
+# Files
+
+An [online demo](http://dmm.anu.edu.au/geco/), Python program, and documentation are available.
+
+- [Python source code package (.tar.gz)](http://dmm.anu.edu.au/geco/geco-data-generator-corruptor.tar.gz)
+
+- [Manual (PDF)](http://dmm.anu.edu.au/geco/flex-data-gen-manual.pdf)
+
 
 ## Citation
 
