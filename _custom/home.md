@@ -23,7 +23,16 @@ We welcome contributions via [GitHub](http://www.github.com/dlrep/dlrep).
 </div>
 
 
-## Maintainers
+## People
+
+This repository is a community effort.
+Currently,
+[Luiza Antonie](http://www.uoguelph.ca/~lantonie/) and
+[Hye-Chung Kum](https://sph.tamhsc.edu/hpm/faculty/kum.html) are the editors-in-chief.
+[Özgür Akgün](http://ozgur.host.cs.st-andrews.ac.uk) has developed the first version of the website.
+
+We thank the following list of people for their support and contributions to the repository.
+They constitute the advisory board for the Data Linkage Repository.
 
 - [Özgür Akgün](http://ozgur.host.cs.st-andrews.ac.uk)  
 School of Computer Science, University of St Andrews
