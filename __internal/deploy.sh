@@ -10,6 +10,7 @@ SCRIPT_DIR="$( cd "$( dirname "$0" )" && pwd )"
 
 git config --global user.name "dlrep-bot"
 git config --global user.email "ozgurakgun+dlrep@gmail.com"
+git config --global push.default simple
 
 REV=$(git rev-parse --short HEAD)
 TIME=$(date "+%Y-%m-%d %H:%M:%S")
@@ -19,7 +20,7 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     echo "The build will be deployed to to the 'previews' repository."
 
     # rebuild with custom baseurl
-    bundle exec jekyll build --baseurl "/previews/PR-$TRAVIS_PULL_REQUEST"
+    JEKYLL_ENV=development bundle exec jekyll build --baseurl "/previews/PR-$TRAVIS_PULL_REQUEST"
 
     # clone repo
     rm -rf repo-upstream
@@ -36,10 +37,10 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
     if [[ -n $(git status -s) ]]; then
         echo "Deploying..."
         git commit -m "PR dlrep/dlrep#$TRAVIS_PULL_REQUEST, commit dlrep/dlrep@$REV (at $TIME)"
-        git push "https://$GH_TOKEN@github.com/dlrep/previews.git" gh-pages > stdout 2> stderr
-        cat stdout stderr | sed "s/$GH_TOKEN/TOKEN/g"
-        export GITHUB_COMMENT="Successfully created preview build: http://dlrep.github.io/previews/PR-$TRAVIS_PULL_REQUEST"
-        bundle exec ruby "${SCRIPT_DIR}"/github_comment.rb
+        (cd $SCRIPT_DIR ; wget -c https://dl.dropboxusercontent.com/u/14272760/keep/dlrep-private ; chmod +x $SCRIPT_DIR/dlrep-private)
+        $SCRIPT_DIR/dlrep-private push
+        export GITHUB_COMMENT="Preview build: http://dlrep.github.io/previews/PR-$TRAVIS_PULL_REQUEST"
+        $SCRIPT_DIR/dlrep-private comment $TRAVIS_PULL_REQUEST $GITHUB_COMMENT
     else
         echo "There were no changes."
         echo "Skipping deploy."
@@ -51,7 +52,7 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
     echo "The build will be deployed to to the 'production' repository."
 
     # rebuild with custom baseurl
-    bundle exec jekyll build --baseurl "/production"
+    JEKYLL_ENV=production bundle exec jekyll build --baseurl "http://dlrep.org"
 
     # clone repo
     rm -rf repo-upstream
@@ -61,6 +62,7 @@ elif [ $TRAVIS_BRANCH == "master" ]; then
 
     # copy current files
     rm -rf *
+    echo "dlrep.org" > CNAME
     cp -r ../_site/* .
 
     # ship it

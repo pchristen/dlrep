@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 5
 title: Contributing
 permalink: /contributing
 ---
@@ -25,6 +25,12 @@ Then somebody will merge your changes.
 You (or a maintainer) may need to make some more commits & pushes before the merge.
 
 We will setup a build bot, so the changes can be previewed before a merge.
+
+## Some good pages with very useful information
+
+- [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/)
+- [GitHub Flow in the Browser](https://help.github.com/articles/github-flow-in-the-browser/)
+- [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## Adding a new data set
 

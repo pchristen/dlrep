@@ -23,61 +23,40 @@ We welcome contributions via [GitHub](http://www.github.com/dlrep/dlrep).
 </div>
 
 
+## People
 
-<div class="panel panel-default" style="width: 80%; margin: 0 auto;">
-    <div class="panel-heading">
-        <h2 class="panel-title">
-            Maintainers
-        </h2>
-    </div>
-    <div class="panel-body">
-        <table class="table">
+This repository is a community effort.
+Currently,
+[Luiza Antonie](http://www.uoguelph.ca/~lantonie/) and
+[Hye-Chung Kum](https://sph.tamhsc.edu/hpm/faculty/kum.html) are the editors-in-chief.
+[Özgür Akgün](http://ozgur.host.cs.st-andrews.ac.uk) has developed the first version of the website.
 
-            <tr> <th> Name </th> <th> Affiliation </th> </tr>
+We thank the following list of people for their support and contributions to the repository.
+They constitute the advisory board for the Data Linkage Repository.
 
-<tr> <td nowrap markdown="1">
-[Hye-Chung Kum](mailto:kum@tamu.edu)
-</td> <td markdown="1">
-Texas A&M University, Dept. of Health Policy and Management, Dept. of Computer Science and Engineering, Dept. of Industrial and Systems Engineering
-</td> </tr>
-
-<tr> <td nowrap markdown="1">
-[Luiza Antonie](mailto:lantonie@uoguelph.ca)
-</td> <td markdown="1">
-School of Computer Science, University of Guelph, Canada
-</td> </tr>
-
-<tr> <td nowrap markdown="1">
-[Özgür Akgün](http://ozgur.host.cs.st-andrews.ac.uk)
-</td> <td markdown="1">
+- [Özgür Akgün](http://ozgur.host.cs.st-andrews.ac.uk)  
 School of Computer Science, University of St Andrews
-</td> </tr>
-
-<tr> <td nowrap markdown="1">
-[J Trent Alexander](mailto:J.Trent.Alexander@census.gov)
-</td> <td markdown="1">
+- [J Trent Alexander](https://www.census.gov/ces/researchprograms/workingatcarra.html)  
 CENSUS/CARRA FED
-</td> </tr>
-
-<tr> <td nowrap markdown="1">
-[Margaret Levenstein](mailto:maggiel@umich.edu)
-</td> <td markdown="1">
-ICPSR
-</td> </tr>
-
-<tr> <td nowrap markdown="1">
-[Amy B Ohara](mailto:Amy.B.Ohara@census.gov)
-</td> <td markdown="1">
+- [Luiza Antonie](http://www.uoguelph.ca/~lantonie/)  
+School of Computer Science, University of Guelph, Canada
+- [Peter Christen](http://users.cecs.anu.edu.au/~christen/)  
+Research School of Computer Science, The Australian National University
+- [Hye-Chung Kum](https://sph.tamhsc.edu/hpm/faculty/kum.html)  
+Texas A&M University, Dept. of Health Policy and Management, Dept. of Computer Science and Engineering, Dept. of Industrial and Systems Engineering
+- [Margaret Levenstein](http://www-personal.umich.edu/~maggiel/)  
+ICPSR, University of Michigan
+- [Amy B O'Hara](http://www.census.gov/research/researchers/profile.php?cv_profile=2307)  
 CENSUS/CARRA FED
-</td> </tr>
-
-<tr> <td nowrap markdown="1">
-[Evan Roberts](mailto:eroberts@umn.edu)
-</td> <td markdown="1">
+- [Evan Roberts](http://www.evanroberts.net/)  
 Minnesota Population Center and Department of Sociology, University of Minnesota
-</td> </tr>
 
-        </table>
-    </div>
-</div>
 
+## Acknowledgements
+
+We thank the following institutions for their support for the Data Linkage Repository.
+
+- The [Administrative Data Research Centre Scotland (ADRC-Scotland)](https://adrn.ac.uk/about/research-centre-scotland), for funding the  domain registration for [dlrep.org](http://dlrep.org/).
+- The [Isaac Newton Institute for Mathematical Sciences, Cambridge](http://www.newton.ac.uk/),
+  for support and hospitality during the programme [Data Linkage and Anonymisation (INI DLA)](https://www.newton.ac.uk/event/dla) where initial work on this repository was undertaken.  
+  The INI DLA programme is supported by EPSRC grant no EP/K032208/1.
